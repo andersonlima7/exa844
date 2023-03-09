@@ -1,0 +1,159 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -39.9724179,
+                    -13.5320763
+                ]
+            },
+            "properties": {
+                "nome": "Ristorante Biancamano",
+                "tipo": "restaurant"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -39.9733746,
+                    -13.5359043
+                ]
+            },
+            "properties": {
+                "nome": "Pizzaria Click",
+                "tipo": "fast_food"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -39.9746119,
+                    -13.5359889
+                ]
+            },
+            "properties": {
+                "nome": "Colégio Taylor Egídio - F1 / F2 / Médio",
+                "tipo": "school"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -39.9739026,
+                    -13.5354665
+                ]
+            },
+            "properties": {
+                "nome": "Colégio Taylor Egídio - Infantil",
+                "tipo": "school"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -39.9752067,
+                    -13.530303
+                ]
+            },
+            "properties": {
+                "nome": "Escola Tempo Feliz - Infantil e F1",
+                "tipo": "school"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -39.9744912,
+                    -13.5306011
+                ]
+            },
+            "properties": {
+                "nome": "Colégio Dimensão - F2 e Médio",
+                "tipo": "school"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -39.9742858,
+                    -13.5307847
+                ]
+            },
+            "properties": {
+                "nome": "Pizzaria Colibri",
+                "tipo": "fast_food"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -39.9738652,
+                    -13.5308707
+                ]
+            },
+            "properties": {
+                "nome": "Posto de Saúde",
+                "tipo": "hospital"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -39.9735144,
+                    -13.5295173
+                ]
+            },
+            "properties": {
+                "nome": "Colégio Pio XII - Médio e Técnico",
+                "tipo": "school"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -39.9719434,
+                    -13.534322
+                ]
+            },
+            "properties": {
+                "nome": "Igreja Batista",
+                "tipo": "place_of_worship"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -39.9733226,
+                    -13.5318269
+                ]
+            },
+            "properties": {
+                "nome": "Colégio Virgílio Pereira de Almeida - Médio e Técnico",
+                "tipo": "school"
+            }
+        }
+    ]
+}

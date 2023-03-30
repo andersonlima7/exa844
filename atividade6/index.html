@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Meu blog</title>
+  </head>
+  <body
+    style="background-color: black; color: white; font-size: 24px; gap: 5px"
+  >
+    <div style="display: flex; justify-content: center">
+      <form method="post" action="/cgi-bin/blog.py">
+        <h1>Meu blog</h1>
+        <label for="autor">Autor:</label><br />
+        <input type="text" id="autor" name="autor" /><br />
+        <label for="mensagem">Mensagem:</label><br />
+        <textarea id="mensagem" name="mensagem"></textarea><br />
+        <button type="submit">Enviar</button>
+      </form>
+    </div>
+    <h2>Mensagens</h2>
+    <!-- A lista de mensagens será gerada pelo script CGI -->
+  </body>
+</html>

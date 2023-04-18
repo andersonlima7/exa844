@@ -1,0 +1,86 @@
+<html>
+  <head>
+    <title>My Blog</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <script type="application/javascript">
+      let url =
+        "https://script.google.com/macros/s/AKfycbzBn3sALe1rYjz7Ze-Ik7q9TEVP0I2V3XX7GNcecWP8NvCzGt4yO_RT1OlQp09TE9cU/exec";
+      function send(event) {
+        data = {
+          message: document.getElementById("msg").value,
+          author: document.getElementById("autor").value,
+        };
+        let json_data = JSON.stringify(data);
+
+        let header = {
+          "Content-Type": "application/json",
+        };
+
+        fetch(url, {
+          method: "POST",
+          body: json_data,
+          headers: header,
+          mode: "no-cors",
+        });
+      }
+
+      function reload() {
+        console.log("reloading...");
+        const numOfRows = document
+          .getElementById("tbody")
+          .getElementsByTagName("tr").length;
+        const ajax = new XMLHttpRequest();
+        ajax.open("GET", `${url}?tenho=${numOfRows}`, true);
+        console.log(`${url}?tenho=${numOfRows}`);
+        ajax.onload = function () {
+          if (ajax.status === 200) {
+            console.log(`teste`);
+            const jsonObj = JSON.parse(ajax.responseText).reverse(); //JSON.parse()
+            const table = document.getElementById("tbody");
+            jsonObj.map((obj) => {
+              const row = table.insertRow(0);
+              const author = row.insertCell(0);
+              const message = row.insertCell(1);
+              const time = row.insertCell(2);
+
+              author.innerHTML = obj[0];
+              message.innerHTML = obj[1];
+              time.innerHTML = obj[2];
+            });
+          }
+        };
+        ajax.send();
+      }
+
+      function both() {
+        send();
+        reload();
+      }
+    </script>
+  </head>
+  <body>
+    <h1 align="center">Mensagem:</h1>
+    <hr />
+    <br />
+    <form align="center">
+      <p>Mensagem:</p>
+      <input type="text" size="64" name="msg" id="msg" /><br /><br />
+      <p>Autor:</p>
+      <input type="text" size="64" name="autor" id="autor" />
+      <br /><br />
+      <button type="button" onclick="both()">Enviar</button>
+    </form>
+
+    <div style="margin-top: 60px" align="center">
+      <button type="button" onclick="reload()">Recarregar</button>
+      <table id="my-table" style="margin-top: 60px">
+        <thead align="left">
+          <th>Message</th>
+          <th>Autor</th>
+          <th>Time</th>
+        </thead>
+        <tbody id="tbody"></tbody>
+      </table>
+    </div>
+  </body>
+</html>

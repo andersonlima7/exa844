@@ -34,7 +34,6 @@
         console.log(`${url}?tenho=${numOfRows}`);
         ajax.onload = function () {
           if (ajax.status === 200) {
-            console.log(`teste`);
             const jsonObj = JSON.parse(ajax.responseText).reverse(); //JSON.parse()
             const table = document.getElementById("tbody");
             jsonObj.map((obj) => {
